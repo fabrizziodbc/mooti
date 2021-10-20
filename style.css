@@ -472,8 +472,8 @@ html {
 .main .how .front,
 .main .how .back {
   border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 20px rgba(63, 248, 6, 0.548);
-          box-shadow: 0px 0px 20px rgba(63, 248, 6, 0.548);
+  -webkit-box-shadow: 0px 0px 20px var(--color__primary);
+          box-shadow: 0px 0px 20px var(--color__primary);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
@@ -558,8 +558,8 @@ html {
   width: 191px;
   height: 191px;
   background-color: rgba(255, 255, 255, 0);
-  -webkit-box-shadow: 0px 0px 20px rgba(63, 248, 6, 0.548);
-          box-shadow: 0px 0px 20px rgba(63, 248, 6, 0.548);
+  -webkit-box-shadow: 0px 0px 20px var(--color__primary);
+          box-shadow: 0px 0px 20px var(--color__primary);
 }
 
 .main .how .outer-outer-ring {
