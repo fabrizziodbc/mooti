@@ -472,8 +472,7 @@ html {
 .main .how .front,
 .main .how .back {
   border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 20px var(--color__primary);
-          box-shadow: 0px 0px 20px var(--color__primary);
+  border: solid 1px var(--color__primary);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
@@ -496,7 +495,7 @@ html {
 
 .main .how .front p,
 .main .how .back p {
-  color: var(--color__secundary);
+  color: var(--color__background);
 }
 
 .main .how .front {
@@ -505,6 +504,7 @@ html {
   font-size: var(--font-size__tiny);
   padding: 0 16px;
   text-align: center;
+  background-color: var(--color__primary);
 }
 
 .main .how .flip-card-front__icon {
@@ -533,7 +533,7 @@ html {
 }
 
 .main .how .card__5 {
-  background-image: url(./assets/Sistema_centralizado.svg);
+  background-image: url(./assets/historial_clinico.svg);
 }
 
 .main .how .card__6 {
@@ -564,8 +564,6 @@ html {
   width: 191px;
   height: 191px;
   background-color: rgba(255, 255, 255, 0);
-  -webkit-box-shadow: 0px 0px 20px var(--color__primary);
-          box-shadow: 0px 0px 20px var(--color__primary);
 }
 
 .main .how .outer-outer-ring {
@@ -577,8 +575,6 @@ html {
   width: 211px;
   height: 211px;
   background-color: rgba(255, 255, 255, 0);
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
 .main .contact {
@@ -628,6 +624,12 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -636,8 +638,10 @@ html {
 
 .main .contact__form input {
   color: var(--color__text-2);
+  background-color: var(--color__background);
+  border: none;
   height: 50px;
-  width: 290px;
+  width: 240px;
   padding: 4px 8px;
   margin-bottom: 20px;
 }
@@ -648,7 +652,7 @@ html {
   border-radius: 50px;
   border: 1px solid var(--color__primary);
   font-weight: bold;
-  width: 290px;
+  width: 240px;
   color: var(--color__text);
   background-color: var(--color__primary);
 }

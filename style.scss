@@ -326,6 +326,7 @@ html {
       width: 175px;
       height: 175px;
       background-color: rgba(0, 0, 0, 0);
+      
     }
 
     .circle,
@@ -340,12 +341,14 @@ html {
       position: relative;
       width: 175px;
       height: 175px;
+      
     }
 
     .front,
     .back {
       border-radius: 50%;
-      box-shadow: 0px 0px 20px var(--color__primary);
+      //acá era el otro difuminado xd
+      border: solid 1px var(--color__primary);
       backface-visibility: hidden;
       position: absolute;
       top: 0;
@@ -355,8 +358,9 @@ html {
       justify-content: center;
       align-items: center;
       
+      
       p {
-        color: var(--color__secundary);
+        color: var(--color__background);
       }
     }
 
@@ -366,6 +370,7 @@ html {
       font-size: var(--font-size__tiny);
       padding: 0 16px;
       text-align: center;
+      background-color: var(--color__primary);
     }
     .flip-card-front__icon {
       display: inline-block;
@@ -388,7 +393,7 @@ html {
       background-image: url(./assets/Sistema_centralizado.svg);
     }
     .card__5 {
-      background-image: url(./assets/Sistema_centralizado.svg);
+      background-image: url(./assets/historial_clinico.svg);
     }
     .card__6 {
       background-image: url(./assets/Alertas.svg);
@@ -418,7 +423,7 @@ html {
       width: 191px;
       height: 191px;
       background-color: rgba(255, 255, 255, 0);
-      box-shadow: 0px 0px 20px var(--color__primary);
+      
     }
 
     .outer-outer-ring {
@@ -430,7 +435,7 @@ html {
       width: 211px;
       height: 211px;
       background-color: rgba(255, 255, 255, 0);
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+      //aca era el difuminado
     }
   }
 
@@ -466,11 +471,15 @@ html {
     &__form {
       z-index: 3;
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
       input {
         color: var(--color__text-2);
+        background-color: var(--color__background);
+        border: none;
         height: 50px;
-        width: 290px;
+        width: 240px;
         padding: 4px 8px;
         margin-bottom: 20px;
       }
@@ -481,7 +490,7 @@ html {
       border-radius: 50px;
       border: 1px solid var(--color__primary);
       font-weight: bold;
-      width: 290px;
+      width: 240px;
       color: var(--color__text);
       background-color: var(--color__primary);
     }
