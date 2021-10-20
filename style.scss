@@ -28,6 +28,18 @@
 html {
   font-size: 62.5%;
 }
+@keyframes moveup {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(10px);      }
+}
+@keyframes movedown {
+  0% { transform: translateY(10px); }
+  100% { transform: translateY(-10px);      }
+}
+@keyframes bounce {
+  0% { transform: translateX(-10px); }
+  100% { transform: translateX(10px);      }
+}
 .header {
   z-index: 5;
   padding: 0 16px;
@@ -64,20 +76,35 @@ html {
   position: fixed;
   padding-top: 60px;
   background-color: var(--color__background);
+  
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: var(--font-size__title);
-  display: none;
+  top: 0;
+  left: 100vw;
+  z-index: 4;
+  transition: all 0.5s;
   &__container {
     height: 60vh;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    li{
+      color: var(--color__text-2);
+      text-align: center;
+      width: 100vw;
+    }
+    li:hover{
+      color: var(--color__primary);
+    }
   }
+}
+.showRight {
+  left: 0;
 }
 .whatsapp {
   width: 55px;
@@ -93,6 +120,10 @@ html {
   z-index: 3;
 }
 .main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   .cover {
     position: relative;
     padding: 60px 8px 0;
@@ -365,12 +396,14 @@ html {
     }
 
     .front {
-      background-color: #fff;
       z-index: 2;
       font-size: var(--font-size__tiny);
       padding: 0 16px;
       text-align: center;
-      background-color: var(--color__primary);
+      background-color: var(--color__secundary);
+      p{
+        width: 126px;
+      }
     }
     .flip-card-front__icon {
       display: inline-block;
@@ -402,10 +435,13 @@ html {
 
     .back {
       transform: rotate3d(45, 45, 0, 180deg);
-      background-color: #fff;
+      background-color: var(--color__primary);
       padding: 8px 16px;
       text-align: center;
       font-size: var(--font-size__subtitle);
+      p{
+        color: var(--color__text-2);
+      }
     }
 
     .back-logo {
@@ -496,3 +532,5 @@ html {
     }
   }
 }
+
+
