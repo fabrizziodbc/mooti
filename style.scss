@@ -27,18 +27,42 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color__primary);
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 20px;
+  }
 }
 @keyframes moveup {
-  0% { transform: translateY(-10px); }
-  100% { transform: translateY(10px);      }
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 @keyframes movedown {
-  0% { transform: translateY(10px); }
-  100% { transform: translateY(-10px);      }
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 @keyframes bounce {
-  0% { transform: translateX(-10px); }
-  100% { transform: translateX(10px);      }
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
 }
 .header {
   z-index: 5;
@@ -76,7 +100,6 @@ html {
   position: fixed;
   padding-top: 60px;
   background-color: var(--color__background);
-  
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -93,12 +116,13 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    li{
+    a {
       color: var(--color__text-2);
       text-align: center;
       width: 100vw;
+      text-decoration: none;
     }
-    li:hover{
+    a:hover {
       color: var(--color__primary);
     }
   }
@@ -357,7 +381,6 @@ html {
       width: 175px;
       height: 175px;
       background-color: rgba(0, 0, 0, 0);
-      
     }
 
     .circle,
@@ -372,7 +395,6 @@ html {
       position: relative;
       width: 175px;
       height: 175px;
-      
     }
 
     .front,
@@ -388,8 +410,7 @@ html {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
-      
+
       p {
         color: var(--color__background);
       }
@@ -401,7 +422,7 @@ html {
       padding: 0 16px;
       text-align: center;
       background-color: var(--color__secundary);
-      p{
+      p {
         width: 126px;
       }
     }
@@ -431,7 +452,6 @@ html {
     .card__6 {
       background-image: url(./assets/Alertas.svg);
     }
- 
 
     .back {
       transform: rotate3d(45, 45, 0, 180deg);
@@ -439,7 +459,7 @@ html {
       padding: 8px 16px;
       text-align: center;
       font-size: var(--font-size__subtitle);
-      p{
+      p {
         color: var(--color__text-2);
       }
     }
@@ -459,7 +479,6 @@ html {
       width: 191px;
       height: 191px;
       background-color: rgba(255, 255, 255, 0);
-      
     }
 
     .outer-outer-ring {
@@ -532,5 +551,3 @@ html {
     }
   }
 }
-
-

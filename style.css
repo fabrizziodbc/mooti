@@ -29,6 +29,21 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar {
+  width: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: var(--color__primary);
+  border-radius: 20px;
+}
+
+html ::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 20px;
 }
 
 @-webkit-keyframes moveup {
@@ -179,13 +194,14 @@ html {
       justify-content: space-around;
 }
 
-.menu-drop__container li {
+.menu-drop__container a {
   color: var(--color__text-2);
   text-align: center;
   width: 100vw;
+  text-decoration: none;
 }
 
-.menu-drop__container li:hover {
+.menu-drop__container a:hover {
   color: var(--color__primary);
 }
 

@@ -15,15 +15,15 @@
   </head>
   <body>
     <header class="header">
-      <span class="header__logo"></span>
+      <a class="header__logo" href="#home"></a>
       <span class="header__nav-hamburguer">&equiv;</span>
     </header>
     <div class="menu-drop">
       <ul class="menu-drop__container">
-        <li class="menu-drop__item">Inicio</li>
-        <li class="menu-drop__item">Producto</li>
-        <li class="menu-drop__item">Precios</li>
-        <li class="menu-drop__item">Contacto</li>
+        <li class="menu-drop__item"><a href="#home">Inicio</a></li>
+        <li class="menu-drop__item"><a href="#mooti">¿Qué es Mooti?</a></li>
+        <li class="menu-drop__item"><a href="#beneficios">Beneficios</a></li>
+        <li class="menu-drop__item"><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
     <a
@@ -32,7 +32,7 @@
       rel="noreferrer"
       ><span class="whatsapp"></span
     ></a>
-    <main class="main">
+    <main class="main" id="home">
       <div class="cover">
         <div class="cover__background"></div>
         <div class="cover__opacity"></div>
@@ -42,14 +42,14 @@
             Conoce los valores de productividad y salud de cada vaca.
           </p>
           <div class="cover__buttons">
-            <button class="cover__button cover__button--main">
+            <a href="#contacto"><button class="cover__button cover__button--main">
               Solicita una Demo
-            </button>
-            <button class="cover__button">Ver más</button>
+            </button></a>
+           <a href="#mooti"> <button class="cover__button">Ver más</button></a>
           </div>
         </div>
       </div>
-      <div class="what">
+      <div class="what" id="mooti">
         <p class="what__title">¿Que es MooTi?</p>
         <iframe
           class="what__video"
@@ -60,7 +60,7 @@
           allowfullscreen
         ></iframe>
       </div>
-      <div class="how">
+      <div class="how" id="beneficios">
         <!--        <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -256,7 +256,7 @@
         </div>
       </div>
 
-      <div class="contact">
+      <div class="contact" id="contacto">
         <div class="contact__opacity"></div>
         <p class="contact__title">Contáctanos</p>
         <form action="" class="contact__form">
