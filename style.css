@@ -502,6 +502,9 @@ html {
 .main .how .front {
   background-color: #fff;
   z-index: 2;
+  font-size: var(--font-size__tiny);
+  padding: 0 16px;
+  text-align: center;
 }
 
 .main .how .flip-card-front__icon {
@@ -541,6 +544,9 @@ html {
   -webkit-transform: rotate3d(45, 45, 0, 180deg);
           transform: rotate3d(45, 45, 0, 180deg);
   background-color: #fff;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: var(--font-size__subtitle);
 }
 
 .main .how .back-logo {
