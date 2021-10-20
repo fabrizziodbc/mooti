@@ -54,7 +54,7 @@ html {
   display: inline-block;
   width: 130px;
   height: 60px;
-  background-image: url(../assets/MOOTI.png);
+  background-image: url(./assets/MOOTI.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -116,7 +116,7 @@ html {
   position: fixed;
   bottom: 16px;
   left: 16px;
-  background-image: url(../assets/whatsapp.png);
+  background-image: url(./assets/whatsapp.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -442,27 +442,27 @@ html {
 }
 
 .main .how .flip-card .card__1 {
-  background-image: url(../assets/Tasa_de_preñez.svg);
+  background-image: url(./assets/Tasa_de_preñez.svg);
 }
 
 .main .how .flip-card .card__2 {
-  background-image: url(../assets/Incremento_de_leche.svg);
+  background-image: url(./assets/Incremento_de_leche.svg);
 }
 
 .main .how .flip-card .card__3 {
-  background-image: url(../assets/Reducción_de_estres.svg);
+  background-image: url(./assets/Reducción_de_estres.svg);
 }
 
 .main .how .flip-card .card__4 {
-  background-image: url(../assets/Sistema_centralizado.svg);
+  background-image: url(./assets/Sistema_centralizado.svg);
 }
 
 .main .how .flip-card .card__5 {
-  background-image: url(../assets/Sistema_centralizado.svg);
+  background-image: url(./assets/Sistema_centralizado.svg);
 }
 
 .main .how .flip-card .card__6 {
-  background-image: url(../assets/Alertas.svg);
+  background-image: url(./assets/Alertas.svg);
 }
 
 .main .how .flip-card-inner {
