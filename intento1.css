@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 180px;
+  border: 1px solid #f1f1f1;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin-bottom: 16px;
+}
+
+.flip-card .flip-card-front__icon {
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flip-card .card__1 {
+  background-image: url(./assets/Tasa_de_preñez.svg);
+}
+
+.flip-card .card__2 {
+  background-image: url(./assets/Incremento_de_leche.svg);
+}
+
+.flip-card .card__3 {
+  background-image: url(./assets/Reducción_de_estres.svg);
+}
+
+.flip-card .card__4 {
+  background-image: url(./assets/Sistema_centralizado.svg);
+}
+
+.flip-card .card__5 {
+  background-image: url(./assets/Sistema_centralizado.svg);
+}
+
+.flip-card .card__6 {
+  background-image: url(./assets/Alertas.svg);
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color__primary);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color__secundary);
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=intento1.css.map */

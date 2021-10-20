@@ -114,7 +114,7 @@ html {
       width: 100vw;
       height: 100vh;
       background-color: #000000;
-      opacity: 0.8;
+      opacity: 0.6;
       position: absolute;
       top: 0;
       left: 0;
@@ -297,85 +297,134 @@ html {
     grid-template-rows: 1fr 1fr; */
     place-items: center;
 
-    .flip-card {
-      background-color: transparent;
-      width: 200px;
-      height: 180px;
-      border: 1px solid #f1f1f1;
-      perspective: 1000px;
-      margin-bottom: 16px;
-      .flip-card-front__icon {
-        display: inline-block;
-        width: 85px;
-        height: 85px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .card__1 {
-        background-image: url(./assets/Tasa_de_preñez.svg);
-      }
-      .card__2 {
-        background-image: url(./assets/Incremento_de_leche.svg);
-      }
-      .card__3 {
-        background-image: url(./assets/Reducción_de_estres.svg);
-      }
-      .card__4 {
-        background-image: url(./assets/Sistema_centralizado.svg);
-      }
-      .card__5 {
-        background-image: url(./assets/Sistema_centralizado.svg);
-      }
-      .card__6 {
-        background-image: url(./assets/Alertas.svg);
-      }
+    body {
+      padding-top: 2em;
+      background-color: #c02227;
     }
 
-    /* This container is needed to position the front and back side */
-    .flip-card-inner {
+    .circle-container {
       position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.8s;
+      perspective: 1000;
+      margin-bottom: 32px;
+    }
+
+    .circle-container:hover .circle {
+      transform: rotate3d(45, 45, 0, 180deg);
+    }
+
+    .circle-container:hover .outer-ring {
+      transform: rotate3d(45, 0, 0, 180deg);
+    }
+
+    .circle-container:hover .outer-outer-ring {
+      transform: rotate3d(0, 45, 0, 180deg);
+    }
+
+    .circle-container,
+    .front,
+    .back {
+      width: 175px;
+      height: 175px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .circle,
+    .outer-ring,
+    .outer-outer-ring {
+      transition: 0.5s;
       transform-style: preserve-3d;
+      transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
 
-    /* Do an horizontal flip when you move the mouse over the flip box container */
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
+    .circle {
+      position: relative;
+      width: 175px;
+      height: 175px;
     }
 
-    /* Position the front and back side */
-    .flip-card-front,
-    .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden; /* Safari */
+    .front,
+    .back {
+      border-radius: 50%;
+      box-shadow: 0px 0px 20px rgba(63, 248, 6, 0.548);
       backface-visibility: hidden;
-    }
-
-    /* Style the front side (fallback if image is missing) */
-    .flip-card-front {
+      position: absolute;
+      top: 0;
+      left: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: var(--color__primary);
-      color: black;
+      p {
+        color: var(--color__secundary);
+      }
     }
 
-    /* Style the back side */
-    .flip-card-back {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--color__secundary);
-      color: white;
-      transform: rotateY(180deg);
+    .front {
+      background-color: #fff;
+      z-index: 2;
+    }
+    .flip-card-front__icon {
+      display: inline-block;
+      width: 85px;
+      height: 85px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .card__1 {
+      background-image: url(./assets/Tasa_de_preñez.svg);
+    }
+    .card__2 {
+      background-image: url(./assets/Incremento_de_leche.svg);
+    }
+    .card__3 {
+      background-image: url(./assets/Reducción_de_estres.svg);
+    }
+    .card__4 {
+      background-image: url(./assets/Sistema_centralizado.svg);
+    }
+    .card__5 {
+      background-image: url(./assets/Sistema_centralizado.svg);
+    }
+    .card__6 {
+      background-image: url(./assets/Alertas.svg);
+    }
+    .front p {
+    }
+
+    .back {
+      transform: rotate3d(45, 45, 0, 180deg);
+      background-color: #fff;
+    }
+
+    .back-logo {
+      width: 60%;
+      display: block;
+      margin: 2em auto;
+    }
+
+    .outer-ring {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      width: 191px;
+      height: 191px;
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 20px rgba(63, 248, 6, 0.548);
+    }
+
+    .outer-outer-ring {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      width: 211px;
+      height: 211px;
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     }
   }
 
@@ -400,7 +449,7 @@ html {
       width: 100vw;
       height: 100%;
       background-color: #000000;
-      opacity: 0.6;
+      opacity: 0.5;
       z-index: 2;
     }
     &__title {
