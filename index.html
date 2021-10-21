@@ -39,7 +39,9 @@
           <li class="menu-full__item"><a href="#beneficios">Beneficios</a></li>
           <li class="menu-full__item"><a href="#contacto">Contacto</a></li>
         </ul>
-        <a href="#contacto" class="button-lap"><button class="menu-full__button">Solicita una Demo</button></a>
+        <a href="#contacto" class="button-lap"
+          ><button class="menu-full__button">Solicita una Demo</button></a
+        >
       </div>
     </header>
     <div class="menu-drop">
@@ -176,10 +178,10 @@
               >&starf;&starf;&starf;&starf;&starf;</span
             >
             <p class="reviews-card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-              quae quasi. Sit voluptas deserunt sequi ipsa laudantium odio vel
-              sapiente at, quae harum ullam consequuntur facere deleniti nisi
-              debitis accusantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, quae quasi. Sit voluptas deserunt sequi ipsa laudantium
+              odio vel sapiente at, quae harum ullam consequuntur facere
+              deleniti nisi debitis accusantium?
             </p>
             <span class="reviews-card__img reviews-card__img-1"></span>
           </div>
@@ -190,10 +192,10 @@
               >&starf;&starf;&starf;&starf;&starf;</span
             >
             <p class="reviews-card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-              quae quasi. Sit voluptas deserunt sequi ipsa laudantium odio vel
-              sapiente at, quae harum ullam consequuntur facere deleniti nisi
-              debitis accusantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, quae quasi. Sit voluptas deserunt sequi ipsa laudantium
+              odio vel sapiente at, quae harum ullam consequuntur facere
+              deleniti nisi debitis accusantium?
             </p>
             <span class="reviews-card__img reviews-card__img-2"></span>
           </div>
@@ -204,18 +206,35 @@
         <div class="contact__opacity"></div>
         <p class="contact__title">Contáctanos</p>
         <form action="" class="contact__form">
-          <input type="number" placeholder="RUC" name="ruc" id="ruc" />
           <input
-            type="text"
+            type="number"
+            placeholder="RUC"
+            name="ruc"
+            id="ruc"
+            min="10000000000"
+            max="20999999999"
+            required
+            oninvalid="this.setCustomValidity('Por favor, ingresa un número de RUC válido')"
+            oninput="this.setCustomValidity('')"
+          />
+          <input
+            type="email"
             placeholder="Correo Electrónico  "
             name="correo"
             id="correo"
+            required
+            oninvalid="this.setCustomValidity('Por favor, ingresa un correo electrónico válido')"
+            oninput="this.setCustomValidity('')"
           />
           <input
-            type="number"
+            type="tel"
             placeholder="Celular"
             name="celular"
             id="celular"
+            required
+            pattern="[0-9]{9}"
+            oninvalid="this.setCustomValidity('Por favor, ingresa un número de teléfono válido')"
+            oninput="this.setCustomValidity('')"
           />
           <button class="contact__button">Envíar</button>
         </form>
