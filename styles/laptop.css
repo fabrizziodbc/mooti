@@ -26,6 +26,13 @@
   width: 60%;
 }
 
+.main .how .circle-container,
+.main .how .front,
+.main .how .back {
+  width: 260px;
+  height: 260px;
+}
+
 .main .what__video {
   height: 470px;
 }
