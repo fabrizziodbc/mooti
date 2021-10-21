@@ -2,8 +2,10 @@ const loader = document.querySelector(".loader-container");
 const header__hamburguer = document.querySelector(".header__nav-hamburguer");
 const menu_full = document.querySelector(".menu-drop");
 
+const YOUR_SERVICE_ID = "service_y5leog6";
+const YOUR_TEMPLATE_ID = "template_btrzvpb"
 const sendForm = () =>{
-  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', '#myForm')
+  emailjs.sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, '#myForm')
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
