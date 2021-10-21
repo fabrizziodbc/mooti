@@ -1,6 +1,7 @@
 const loader = document.querySelector(".loader-container");
 const header__hamburguer = document.querySelector(".header__nav-hamburguer");
 const menu_full = document.querySelector(".menu-drop");
+const button = document.getElementById("contact__button");
 
 const YOUR_SERVICE_ID = "service_y5leog6";
 const YOUR_TEMPLATE_ID = "template_btrzvpb"
@@ -26,4 +27,5 @@ addEventListener("DOMContentLoaded", () => {
   menu_full.addEventListener("click", () => {
     menu_full.classList.toggle("showRight");
   });
+  button.addEventListener("submit", sendForm)
 });

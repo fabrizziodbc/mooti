@@ -12,8 +12,10 @@
   --color__muted: #bdbdbd;
 
   --font-size__big-icon: 8rem;
+  --font-size__big-b: 6rem;
   --font-size__big: 5rem;
   --font-size__title: 3rem;
+  --font-size__subtitle-b: 2.5rem;
   --font-size__subtitle: 2rem;
   --font-size__text: 1.8rem;
   --font-size__tiny: 1.4rem;
@@ -160,17 +162,23 @@ html {
       left: 0;
       height: 100vh;
       width: 100vw;
-      background-image: url(https://images.pexels.com/photos/2252557/pexels-photo-2252557.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+      background-image: url(https://images.pexels.com/photos/5667015/pexels-photo-5667015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 1;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
     }
     &__opacity {
       width: 100vw;
       height: 100vh;
       background-color: #000000;
-      opacity: 0.4;
+      opacity: 0.2;
       position: absolute;
       top: 0;
       left: 0;
@@ -525,7 +533,7 @@ html {
   .contact {
     padding: 60px 0 16px;
     position: relative;
-    background-image: url(https://images.pexels.com/photos/1069710/pexels-photo-1069710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url(https://images.pexels.com/photos/4927796/pexels-photo-4927796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -543,7 +551,7 @@ html {
       width: 100vw;
       height: 100%;
       background-color: #000000;
-      opacity: 0.4;
+      opacity: 0.2;
       z-index: 2;
     }
     &__title {
@@ -567,7 +575,9 @@ html {
         padding: 4px 8px;
         margin-bottom: 20px;
       }
-      input::placeholder{ color:var(--color__background)}
+      input::placeholder {
+        color: var(--color__background);
+      }
     }
     &__button {
       font-size: var(--font-size__subtitle);

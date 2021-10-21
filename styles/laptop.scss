@@ -1,4 +1,3 @@
-
 .header {
   padding: 0 60px;
 }
@@ -6,8 +5,8 @@
 .how {
   grid-template-columns: 1fr 1fr 1fr;
 }
-.button-lap{
-    display: inline-block;
+.button-lap {
+  display: inline-block;
 }
 .header__content {
   margin-left: 80px;
@@ -16,23 +15,53 @@
   align-items: center;
   .menu-full {
     width: 60%;
-
   }
 }
 
-.main{
-  .what__video{
+.main {
+  .what__video {
     height: 470px;
   }
-  .reviews{
+  .reviews {
     .reviews-card {
-  
-      &__img{
-        
+      &__img {
         display: inline-block;
       }
-     
+    }
+  }
+  .cover {
+    position: relative;
+    padding: 60px 8px 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    &__content {
+      padding: 16px;
+      height: 100vh;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+    }
+    &__title {
+      font-size: var(--font-size__big-b);
+      margin: 60px 40px 16px;
+      text-align: center;
+      text-shadow: 3px 5px 2px var(--color__text-2);
+    }
+    &__description {
+      font-size: var(--font-size__subtitle-b);
+      max-width: 410px;
+      margin: 0 40px 16px;
+      font-weight: lighter;
+      text-align: center;
+      
     }
   }
 }
-
