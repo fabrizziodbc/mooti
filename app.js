@@ -2,6 +2,14 @@ const loader = document.querySelector(".loader-container");
 const header__hamburguer = document.querySelector(".header__nav-hamburguer");
 const menu_full = document.querySelector(".menu-drop");
 
+const sendForm = () =>{
+  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', '#myForm')
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+}
 
 
 addEventListener("DOMContentLoaded", () => {

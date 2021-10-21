@@ -260,7 +260,7 @@ html ::-webkit-scrollbar-track {
   width: 100vw;
   height: 100vh;
   background-color: #000000;
-  opacity: 0.6;
+  opacity: 0.4;
   position: absolute;
   top: 0;
   left: 0;
@@ -761,7 +761,7 @@ html ::-webkit-scrollbar-track {
   width: 100vw;
   height: 100%;
   background-color: #000000;
-  opacity: 0.5;
+  opacity: 0.4;
   z-index: 2;
 }
 
