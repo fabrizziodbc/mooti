@@ -1,0 +1,21 @@
+
+.header {
+  padding: 0 60px;
+}
+
+.how {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.button-lap{
+    display: inline-block;
+}
+.header__content {
+  margin-left: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  .menu-full {
+    width: 60%;
+
+  }
+}

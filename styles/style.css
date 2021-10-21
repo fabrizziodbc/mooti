@@ -135,7 +135,7 @@ html ::-webkit-scrollbar-track {
   display: inline-block;
   width: 130px;
   height: 60px;
-  background-image: url(./assets/MOOTI.png);
+  background-image: url(../assets/MOOTI.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -175,7 +175,7 @@ html ::-webkit-scrollbar-track {
   font-size: var(--font-size__title);
   top: 0;
   left: 100vw;
-  z-index: 4;
+  z-index: 5;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -216,11 +216,12 @@ html ::-webkit-scrollbar-track {
   position: fixed;
   bottom: 16px;
   left: 16px;
-  background-image: url(./assets/whatsapp.png);
+  background-image: url(../assets/whatsapp.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: 3;
+  z-index: 4;
+  cursor: pointer;
 }
 
 .main {
@@ -328,12 +329,22 @@ html ::-webkit-scrollbar-track {
   border: 1px solid var(--color__primary);
   color: var(--color__primary);
   font-weight: bold;
+  cursor: pointer;
+}
+
+.main .cover__buttons .cover__button:hover {
+  background-color: var(--color__primary);
+  color: var(--color__text);
 }
 
 .main .cover__buttons .cover__button--main {
   width: 200px;
   color: var(--color__text);
   background-color: var(--color__primary);
+}
+
+.main .cover__buttons .cover__button--main:hover {
+  background-color: var(--color__secundary);
 }
 
 .main .what {
@@ -632,27 +643,27 @@ html ::-webkit-scrollbar-track {
 }
 
 .main .how .card__1 {
-  background-image: url(./assets/Tasa_de_preñez.svg);
+  background-image: url(../assets/Tasa_de_preñez.svg);
 }
 
 .main .how .card__2 {
-  background-image: url(./assets/Incremento_de_leche.svg);
+  background-image: url(../assets/Incremento_de_leche.svg);
 }
 
 .main .how .card__3 {
-  background-image: url(./assets/Reducción_de_estres.svg);
+  background-image: url(../assets/Reducción_de_estres.svg);
 }
 
 .main .how .card__4 {
-  background-image: url(./assets/Sistema_centralizado.svg);
+  background-image: url(../assets/Sistema_centralizado.svg);
 }
 
 .main .how .card__5 {
-  background-image: url(./assets/historial_clinico.svg);
+  background-image: url(../assets/historial_clinico.svg);
 }
 
 .main .how .card__6 {
-  background-image: url(./assets/Alertas.svg);
+  background-image: url(../assets/Alertas.svg);
 }
 
 .main .how .back {
@@ -774,5 +785,66 @@ html ::-webkit-scrollbar-track {
   width: 240px;
   color: var(--color__text);
   background-color: var(--color__primary);
+  cursor: pointer;
+}
+
+.main .contact__button:hover {
+  background-color: var(--color__secundary);
+}
+
+.notMob {
+  display: none;
+}
+
+.header__content {
+  margin-left: 80px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__content .menu-full {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.header__content .menu-full a {
+  text-decoration: none;
+  font-size: var(--font-size__text);
+  color: var(--color__primary);
+  margin-right: 12px;
+}
+
+.header__content .menu-full a:hover {
+  color: var(--color__secundary);
+}
+
+.header__content .menu-full__button {
+  font-size: var(--font-size__subtitle);
+  height: 46px;
+  border-radius: 50px;
+  border: 1px solid var(--color__primary);
+  font-weight: bold;
+  width: 210px;
+  color: var(--color__text);
+  background-color: var(--color__primary);
+  cursor: pointer;
+}
+
+.header__content .menu-full__button:hover {
+  background-color: var(--color__secundary);
 }
 /*# sourceMappingURL=style.css.map */

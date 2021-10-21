@@ -79,7 +79,7 @@ html {
     display: inline-block;
     width: 130px;
     height: 60px;
-    background-image: url(./assets/MOOTI.png);
+    background-image: url(../assets/MOOTI.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -108,7 +108,7 @@ html {
   font-size: var(--font-size__title);
   top: 0;
   left: 100vw;
-  z-index: 4;
+  z-index: 5;
   transition: all 0.5s;
   &__container {
     height: 60vh;
@@ -137,11 +137,12 @@ html {
   position: fixed;
   bottom: 16px;
   left: 16px;
-  background-image: url(./assets/whatsapp.png);
+  background-image: url(../assets/whatsapp.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: 3;
+  z-index: 4;
+  cursor: pointer;
 }
 .main {
   width: 100vw;
@@ -215,11 +216,20 @@ html {
         border: 1px solid var(--color__primary);
         color: var(--color__primary);
         font-weight: bold;
+        cursor: pointer;
+      }
+      .cover__button:hover{
+        background-color: var(--color__primary);
+        color: var(--color__text);
       }
       .cover__button--main {
         width: 200px;
         color: var(--color__text);
         background-color: var(--color__primary);
+      }
+      .cover__button--main:hover{
+        background-color: var(--color__secundary);
+       
       }
     }
   }
@@ -435,22 +445,22 @@ html {
       background-size: cover;
     }
     .card__1 {
-      background-image: url(./assets/Tasa_de_preñez.svg);
+      background-image: url(../assets/Tasa_de_preñez.svg);
     }
     .card__2 {
-      background-image: url(./assets/Incremento_de_leche.svg);
+      background-image: url(../assets/Incremento_de_leche.svg);
     }
     .card__3 {
-      background-image: url(./assets/Reducción_de_estres.svg);
+      background-image: url(../assets/Reducción_de_estres.svg);
     }
     .card__4 {
-      background-image: url(./assets/Sistema_centralizado.svg);
+      background-image: url(../assets/Sistema_centralizado.svg);
     }
     .card__5 {
-      background-image: url(./assets/historial_clinico.svg);
+      background-image: url(../assets/historial_clinico.svg);
     }
     .card__6 {
-      background-image: url(./assets/Alertas.svg);
+      background-image: url(../assets/Alertas.svg);
     }
 
     .back {
@@ -548,6 +558,53 @@ html {
       width: 240px;
       color: var(--color__text);
       background-color: var(--color__primary);
+      cursor: pointer;
     }
+    &__button:hover{
+      background-color: var(--color__secundary);
+    }
+  }
+}
+.notMob{
+  display: none;
+}
+
+.header__content{
+  margin-left: 80px;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  .menu-full{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    a{
+      text-decoration: none;
+      font-size: var(--font-size__text);
+      color: var(--color__primary);
+      margin-right: 12px;
+      
+    }
+    a:hover{
+      color: var(--color__secundary);
+      
+    }
+  }
+  .menu-full__button{
+    font-size: var(--font-size__subtitle);
+    height: 46px;
+    border-radius: 50px;
+    border: 1px solid var(--color__primary);
+    font-weight: bold;
+    width: 210px;
+    color: var(--color__text);
+    background-color: var(--color__primary);
+    cursor: pointer;
+  }
+  .menu-full__button:hover{
+    background-color: var(--color__secundary);
   }
 }

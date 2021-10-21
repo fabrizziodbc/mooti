@@ -10,13 +10,37 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/tablet.css"
+      media="screen and (min-width:768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/laptop.css"
+      media="screen and (min-width:1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/laptop-L.css"
+      media="screen and (min-width:1440px)"
+    />
     <title>MooTi</title>
   </head>
   <body>
     <header class="header">
       <a class="header__logo" href="#home"></a>
       <span class="header__nav-hamburguer">&equiv;</span>
+      <div class="header__content notMob">
+        <ul class="menu-full">
+          <li class="menu-full__item"><a href="#home">Inicio</a></li>
+          <li class="menu-full__item"><a href="#mooti">¿Qué es Mooti?</a></li>
+          <li class="menu-full__item"><a href="#beneficios">Beneficios</a></li>
+          <li class="menu-full__item"><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="button-lap"><button class="menu-full__button">Solicita una Demo</button></a>
+      </div>
     </header>
     <div class="menu-drop">
       <ul class="menu-drop__container">
@@ -42,10 +66,12 @@
             Conoce los valores de productividad y salud de cada vaca.
           </p>
           <div class="cover__buttons">
-            <a href="#contacto"><button class="cover__button cover__button--main">
-              Solicita una Demo
-            </button></a>
-           <a href="#mooti"> <button class="cover__button">Ver más</button></a>
+            <a href="#contacto"
+              ><button class="cover__button cover__button--main">
+                Solicita una Demo
+              </button></a
+            >
+            <a href="#mooti"> <button class="cover__button">Ver más</button></a>
           </div>
         </div>
       </div>
@@ -61,79 +87,8 @@
         ></iframe>
       </div>
       <div class="how" id="beneficios">
-        <!--        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <span class="flip-card-front__icon card__1"></span>
-              <p class="flip-card-front__title">Incrementa tu ganado</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Aumenta la tasa de preñez en un 80%</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <span class="flip-card-front__icon card__2"></span>
-              <p class="flip-card-front__title">Más leche</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Incrementa la producción de leche en un 35%</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <span class="flip-card-front__icon card__3"></span>
-              <p class="flip-card-front__title">Menos estrés</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Reduce el estrés del ganado en un 60%</p>
-              
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <span class="flip-card-front__icon card__4"></span>
-              <p class="flip-card-front__title">Historial clínico</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Escribir ventaja del historial clínico</p>
-              
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <span class="flip-card-front__icon card__5"></span>
-              <p class="flip-card-front__title">Sistema centralizado</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Todo los datos en una misma interfaz</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <span class="flip-card-front__icon card__6"></span>
-              <p class="flip-card-front__title">Alertas</p>
-            </div>
-            <div class="flip-card-back">
-              <p>Monitoreo 24/7</p>
-            </div>
-          </div>
-        </div> -->
         <div class="circle-container">
           <div class="outer-ring"></div>
-          <!-- Used for more of a gyroscope type effect
-          <div class="outer-outer-ring"></div>
-          -->
           <div class="circle">
             <div class="front">
               <span class="flip-card-front__icon card__1"></span>
@@ -146,9 +101,6 @@
         </div>
         <div class="circle-container">
           <div class="outer-ring"></div>
-          <!-- Used for more of a gyroscope type effect
-          <div class="outer-outer-ring"></div>
-          -->
           <div class="circle">
             <div class="front">
               <span class="flip-card-front__icon card__2"></span>
@@ -161,9 +113,6 @@
         </div>
         <div class="circle-container">
           <div class="outer-ring"></div>
-          <!-- Used for more of a gyroscope type effect
-          <div class="outer-outer-ring"></div>
-          -->
           <div class="circle">
             <div class="front">
               <span class="flip-card-front__icon card__3"></span>
@@ -176,9 +125,6 @@
         </div>
         <div class="circle-container">
           <div class="outer-ring"></div>
-          <!-- Used for more of a gyroscope type effect
-          <div class="outer-outer-ring"></div>
-          -->
           <div class="circle">
             <div class="front">
               <span class="flip-card-front__icon card__4"></span>
@@ -191,9 +137,6 @@
         </div>
         <div class="circle-container">
           <div class="outer-ring"></div>
-          <!-- Used for more of a gyroscope type effect
-          <div class="outer-outer-ring"></div>
-          -->
           <div class="circle">
             <div class="front">
               <span class="flip-card-front__icon card__5"></span>
@@ -206,9 +149,6 @@
         </div>
         <div class="circle-container">
           <div class="outer-ring"></div>
-          <!-- Used for more of a gyroscope type effect
-          <div class="outer-outer-ring"></div>
-          -->
           <div class="circle">
             <div class="front">
               <span class="flip-card-front__icon card__6"></span>

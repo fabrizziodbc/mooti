@@ -1,0 +1,23 @@
+.header__nav-hamburguer {
+  display: none;
+}
+
+.notMob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.button-lap {
+  display: none;
+}
+
+.header__content .menu-full {
+  width: 100%;
+}
+/*# sourceMappingURL=tablet.css.map */
