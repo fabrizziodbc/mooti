@@ -207,12 +207,11 @@
         <p class="contact__title">Contáctanos</p>
         <form action="" class="contact__form" id="myForm">
           <input
-            type="number"
+            type="tel"
             placeholder="RUC"
             name="ruc"
             id="ruc"
-            min="10000000000"
-            max="20999999999"
+            pattern="[0-9]{11}"
             required
             oninvalid="this.setCustomValidity('Por favor, ingresa un número de RUC válido')"
             oninput="this.setCustomValidity('')"
