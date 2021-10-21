@@ -218,7 +218,7 @@ html {
         font-weight: bold;
         cursor: pointer;
       }
-      .cover__button:hover{
+      .cover__button:hover {
         background-color: var(--color__primary);
         color: var(--color__text);
       }
@@ -227,9 +227,8 @@ html {
         color: var(--color__text);
         background-color: var(--color__primary);
       }
-      .cover__button--main:hover{
+      .cover__button--main:hover {
         background-color: var(--color__secundary);
-       
       }
     }
   }
@@ -317,6 +316,7 @@ html {
       font-weight: lighter;
     }
     .reviews-card {
+      position: relative;
       background-color: var(--color__background);
       height: 310px;
       width: 240px;
@@ -325,7 +325,7 @@ html {
       justify-content: center;
       align-items: baseline;
       margin-bottom: 24px;
-      padding: 16px 12px;
+      padding: 16px 32px;
       &__title {
         color: var(--color__text-2);
         font-weight: bold;
@@ -349,6 +349,24 @@ html {
         padding-right: 20px;
         font-weight: lighter;
         font-size: var(--font-size__tiny);
+      }
+      &__img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20%;
+        left: -40px;
+        display: none;
+      }
+      &__img-1 {
+        background-image: url(../assets/debbie.jpeg);
+      }
+      &__img-2 {
+        background-image: url(../assets/debbie.jpeg);
       }
     }
   }
@@ -540,14 +558,16 @@ html {
       align-items: center;
       flex-direction: column;
       input {
-        color: var(--color__text-2);
-        background-color: var(--color__background);
+        color: var(--color__background);
+        background-color: transparent;
         border: none;
+        border-bottom: solid 1px var(--color__background);
         height: 50px;
         width: 240px;
         padding: 4px 8px;
         margin-bottom: 20px;
       }
+      input::placeholder{ color:var(--color__background)}
     }
     &__button {
       font-size: var(--font-size__subtitle);
@@ -560,40 +580,38 @@ html {
       background-color: var(--color__primary);
       cursor: pointer;
     }
-    &__button:hover{
+    &__button:hover {
       background-color: var(--color__secundary);
     }
   }
 }
-.notMob{
+.notMob {
   display: none;
 }
 
-.header__content{
+.header__content {
   margin-left: 80px;
   width: 100%;
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  .menu-full{
+  .menu-full {
     width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    a{
+    a {
       text-decoration: none;
       font-size: var(--font-size__text);
       color: var(--color__primary);
       margin-right: 12px;
-      
     }
-    a:hover{
+    a:hover {
       color: var(--color__secundary);
-      
     }
   }
-  .menu-full__button{
+  .menu-full__button {
     font-size: var(--font-size__subtitle);
     height: 46px;
     border-radius: 50px;
@@ -604,7 +622,7 @@ html {
     background-color: var(--color__primary);
     cursor: pointer;
   }
-  .menu-full__button:hover{
+  .menu-full__button:hover {
     background-color: var(--color__secundary);
   }
 }

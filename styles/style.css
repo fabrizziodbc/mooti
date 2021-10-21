@@ -480,6 +480,7 @@ html ::-webkit-scrollbar-track {
 }
 
 .main .reviews .reviews-card {
+  position: relative;
   background-color: var(--color__background);
   height: 310px;
   width: 240px;
@@ -497,7 +498,7 @@ html ::-webkit-scrollbar-track {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-bottom: 24px;
-  padding: 16px 12px;
+  padding: 16px 32px;
 }
 
 .main .reviews .reviews-card__title {
@@ -526,6 +527,27 @@ html ::-webkit-scrollbar-track {
   padding-right: 20px;
   font-weight: lighter;
   font-size: var(--font-size__tiny);
+}
+
+.main .reviews .reviews-card__img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20%;
+  left: -40px;
+  display: none;
+}
+
+.main .reviews .reviews-card__img-1 {
+  background-image: url(../assets/debbie.jpeg);
+}
+
+.main .reviews .reviews-card__img-2 {
+  background-image: url(../assets/debbie.jpeg);
 }
 
 .main .how {
@@ -767,13 +789,30 @@ html ::-webkit-scrollbar-track {
 }
 
 .main .contact__form input {
-  color: var(--color__text-2);
-  background-color: var(--color__background);
+  color: var(--color__background);
+  background-color: transparent;
   border: none;
+  border-bottom: solid 1px var(--color__background);
   height: 50px;
   width: 240px;
   padding: 4px 8px;
   margin-bottom: 20px;
+}
+
+.main .contact__form input::-webkit-input-placeholder {
+  color: var(--color__background);
+}
+
+.main .contact__form input:-ms-input-placeholder {
+  color: var(--color__background);
+}
+
+.main .contact__form input::-ms-input-placeholder {
+  color: var(--color__background);
+}
+
+.main .contact__form input::placeholder {
+  color: var(--color__background);
 }
 
 .main .contact__button {

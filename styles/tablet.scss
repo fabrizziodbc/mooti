@@ -17,3 +17,29 @@
   
     }
   }
+
+  .main{
+    .reviews {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color__primary-muted);
+    padding-top: 60px;
+    &__content {
+      text-align: center;
+      padding: 20px 16px;
+    }
+    .cards__container{
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .reviews-card {
+      height: 280px;
+      width: 40%;
+    }
+  }
+  }

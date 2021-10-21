@@ -25,4 +25,12 @@
 .header__content .menu-full {
   width: 60%;
 }
+
+.main .what__video {
+  height: 470px;
+}
+
+.main .reviews .reviews-card__img {
+  display: inline-block;
+}
 /*# sourceMappingURL=laptop.css.map */

@@ -19,3 +19,20 @@
 
   }
 }
+
+.main{
+  .what__video{
+    height: 470px;
+  }
+  .reviews{
+    .reviews-card {
+  
+      &__img{
+        
+        display: inline-block;
+      }
+     
+    }
+  }
+}
+
