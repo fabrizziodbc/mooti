@@ -59,30 +59,89 @@
       ><span class="whatsapp"></span
     ></a>
     <main class="main" id="home">
-      <div class="cover">
-        <div class="cover__background"></div>
-        <div class="cover__opacity"></div>
-        <div class="cover__content">
-          <h1 class="cover__title">MONITOREA EL ESTADO DE TU ESTABLO</h1>
-          <p class="cover__description">
-            Conoce los valores de productividad y salud de cada vaca.
-          </p>
-          <div class="cover__buttons">
-            <a href="#contacto"
-              ><button class="cover__button cover__button--main">
-                Solicita una Demo
-              </button></a
-            >
-            <a href="#mooti"> <button class="cover__button">Ver más</button></a>
+      <div class="container" data-autoplay="true">
+        <div class="slide">
+          <div class="cover">
+            <div class="cover__background cover__background-1"></div>
+            <div class="cover__opacity"></div>
+            <div class="cover__content">
+              <h1 class="cover__title">MONITOREA EL ESTADO DE TU ESTABLO</h1>
+              <p class="cover__description">
+                Conoce los valores de productividad y salud de cada vaca.
+              </p>
+              <div class="cover__buttons">
+                <a href="#contacto"
+                  ><button class="cover__button cover__button--main">
+                    Solicita una Demo
+                  </button></a
+                >
+                <a href="#mooti">
+                  <button class="cover__button">Ver más</button></a
+                >
+              </div>
+            </div>
           </div>
         </div>
+        <div class="slide">
+          <div class="cover">
+            <div class="cover__background cover__background-2"></div>
+            <div class="cover__opacity"></div>
+            <div class="cover__content">
+              <h1 class="cover__title">
+                AUMENTA LA TASA DE PREÑEZ Y PRODUCCIÓN
+              </h1>
+              <p class="cover__description">
+                Conoce y registra las fechas de celo, inseminación y más sobre cada vaca.
+              </p>
+              <div class="cover__buttons">
+                <a href="#contacto"
+                  ><button class="cover__button cover__button--main">
+                    Solicita una Demo
+                  </button></a
+                >
+                <a href="#mooti">
+                  <button class="cover__button">Ver más</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="cover">
+            <div class="cover__background cover__background-3"></div>
+            <div class="cover__opacity"></div>
+            <div class="cover__content">
+              <h1 class="cover__title">DISPONE DE MÁS TIEMPO</h1>
+              <p class="cover__description">
+                DISPONE DE MÁS TIEMPO
+              </p>
+              <div class="cover__buttons">
+                <a href="#contacto"
+                  ><button class="cover__button cover__button--main">
+                    Solicita una Demo
+                  </button></a
+                >
+                <a href="#mooti">
+                  <button class="cover__button">Ver más</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="slider__button prev" onclick="prev()">
+          <i><</i>
+        </button>
+        <button class="slider__button next" onclick="next()">
+          <i>></i>
+        </button>
       </div>
+      <div class="dots_container" id="indicator"></div>
       <div class="what" id="mooti">
         <p class="what__title">¿Que es MooTi?</p>
         <iframe
           class="what__video"
-          src="https://www.youtube.com/embed/0dkHZYeIGIk?controls=0"
-          title="¿Qué es MooTi?"
+          src="https://www.youtube.com/embed/vOqbw20qT0k?start=82"
+          title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -235,7 +294,9 @@
             oninvalid="this.setCustomValidity('Por favor, ingresa un número de teléfono válido')"
             oninput="this.setCustomValidity('')"
           />
-          <button class="contact__button" id="contact__button">Envíar</button>
+          <button type="submit" class="contact__button" id="contact__button">
+            Envíar
+          </button>
         </form>
       </div>
     </main>
