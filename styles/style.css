@@ -956,7 +956,7 @@ html ::-webkit-scrollbar-track {
   position: absolute;
   left: calc(50% - 36px);
   bottom: 0;
-  z-index: 6;
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
