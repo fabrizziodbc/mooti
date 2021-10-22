@@ -91,4 +91,8 @@
   font-weight: lighter;
   text-align: center;
 }
+
+.main .cover__description-3 {
+  max-width: 456px;
+}
 /*# sourceMappingURL=laptop.css.map */

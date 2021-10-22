@@ -166,6 +166,10 @@ html {
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 1;
+
+    }
+    &__background-1 {
+      background-image: url(https://images.pexels.com/photos/5667015/pexels-photo-5667015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
       -moz-transform: scaleX(-1);
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
@@ -173,14 +177,18 @@ html {
       filter: FlipH;
       -ms-filter: "FlipH";
     }
-    &__background-1 {
-      background-image: url(https://images.pexels.com/photos/5667015/pexels-photo-5667015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    }
     &__background-2 {
-      background-image: url(https://images.pexels.com/photos/9253749/pexels-photo-9253749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+      background-image: url(https://images.pexels.com/photos/5216152/pexels-photo-5216152.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
     }
     &__background-3 {
       background-image: url(https://images.pexels.com/photos/8576428/pexels-photo-8576428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+      
     }
     &__opacity {
       width: 100vw;
@@ -668,10 +676,15 @@ html {
 
 .slider__button {
   position: absolute;
+  background-color: transparent;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
   top: 50%;
   border: none;
-  background: rgba(32, 26, 26, 0.527);
-  color: rgb(243, 243, 243);
+  background-image: url(../assets/flecha.svg);
+  background-position: center;
+  background-size: contain;
   padding: 10px 16px;
   margin-top: -25px;
   font-size: 30px;
@@ -681,15 +694,24 @@ html {
 }
 
 .prev {
-  left: 0;
+  left: 8px;
+  cursor: pointer;
+  -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
 }
 
 .next {
-  right: 0;
+  right: 8px;
+  cursor: pointer;
 }
 
 .slider__button:hover {
-  background: rgba(32, 26, 26, 0.527);
+  width: 52px;
+  height: 52px;
 }
 
 .dots_container {
@@ -708,6 +730,7 @@ html {
   border-radius: 50%;
   background: #bdbdbd;
   margin: 4px;
+  cursor: pointer;
 }
 
 .dots:hover {
