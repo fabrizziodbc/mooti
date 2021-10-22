@@ -996,4 +996,43 @@ html ::-webkit-scrollbar-track {
 .dots:hover {
   background: #696969 !important;
 }
+
+.footer {
+  padding-top: 16px;
+  width: 100vw;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+}
+
+.footer hr {
+  color: var(--color__primary);
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__content p {
+  margin: 8px 0;
+  color: var(--color__text-2);
+  font-size: var(--font-size__tiny);
+}
 /*# sourceMappingURL=style.css.map */

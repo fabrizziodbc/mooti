@@ -736,3 +736,27 @@ html {
 .dots:hover {
   background: #696969 !important;
 }
+
+.footer{
+  padding-top: 16px;
+  width: 100vw;
+  min-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  hr{
+   
+    color: var(--color__primary);
+  }
+  &__content{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    p{
+      margin:  8px 0;
+      color: var(--color__text-2);
+      font-size: var(--font-size__tiny);
+    }
+  }
+}
