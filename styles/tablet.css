@@ -8,9 +8,21 @@
   display: flex;
 }
 
-.how {
+.how__title {
+  color: var(--color__text-2);
+  margin-bottom: 16px;
+  font-size: var(--font-size__title);
+  text-align: center;
+}
+
+.how__cards {
+  width: 500px;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  place-items: center;
 }
 
 .button-lap {

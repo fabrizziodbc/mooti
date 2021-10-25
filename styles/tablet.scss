@@ -6,7 +6,20 @@
     display: flex;
   }
 .how{
-     grid-template-columns: 1fr 1fr ;
+  &__title {
+    color: var(--color__text-2);
+    margin-bottom: 16px;
+    font-size: var(--font-size__title);
+    text-align: center;
+  }
+  &__cards {
+    width: 500px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    place-items: center;
+  }
+     
 }
 .button-lap{
     display: none;

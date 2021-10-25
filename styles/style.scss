@@ -396,16 +396,21 @@ html {
     width: 100vw;
     min-height: 100vh;
     background-color: var(--color__background);
-    display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
-    place-items: center;
 
-    body {
-      padding-top: 2em;
-      background-color: #c02227;
+    &__title {
+      color: var(--color__text-2);
+      margin-bottom: 16px;
+      font-size: var(--font-size__title);
+      text-align: center;
     }
-
+    &__cards {
+      width: 100%;
+      min-height: 100vh;
+      display: grid;
+      /* grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr; */
+      place-items: center;
+    }
     .circle-container {
       position: relative;
       perspective: 1000;

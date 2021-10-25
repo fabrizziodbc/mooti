@@ -578,16 +578,23 @@ html ::-webkit-scrollbar-track {
   width: 100vw;
   min-height: 100vh;
   background-color: var(--color__background);
+}
+
+.main .how__title {
+  color: var(--color__text-2);
+  margin-bottom: 16px;
+  font-size: var(--font-size__title);
+  text-align: center;
+}
+
+.main .how__cards {
+  width: 100%;
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
+      grid-template-rows: 1fr 1fr; */
   place-items: center;
-}
-
-.main .how body {
-  padding-top: 2em;
-  background-color: #c02227;
 }
 
 .main .how .circle-container {
