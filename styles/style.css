@@ -910,6 +910,110 @@ html ::-webkit-scrollbar-track {
   background-color: var(--color__secundary);
 }
 
+.suport {
+  width: 100vw;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.suport .respaldo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 16px 0;
+}
+
+.suport .respaldo__title {
+  text-align: center;
+  color: var(--color__text-2);
+  font-size: var(--font-size__title);
+  margin-bottom: 16px;
+}
+
+.suport .respaldo__content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+.suport .respaldo__logo {
+  display: inline-block;
+  width: 240px;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.suport .respaldo__logo-1 {
+  background-image: url(../assets/logo3.jpg);
+}
+
+.suport .respaldo__logo-2 {
+  background-image: url(../assets/logos360.png);
+}
+
+.suport .potenciado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 16px 0;
+}
+
+.suport .potenciado__title {
+  text-align: center;
+  color: var(--color__text-2);
+  font-size: var(--font-size__title);
+  margin-bottom: 16px;
+}
+
+.suport .potenciado__logo {
+  display: inline-block;
+  width: 240px;
+  height: 120px;
+  background-image: url(../assets/logo1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .container {
   position: relative;
   width: 100vw;
