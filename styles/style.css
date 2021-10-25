@@ -565,11 +565,12 @@ html ::-webkit-scrollbar-track {
 }
 
 .main .reviews .reviews-card__img-1 {
-  background-image: url(../assets/debbie.jpeg);
+  background-image: url(../assets/vet.jpeg);
 }
 
 .main .reviews .reviews-card__img-2 {
-  background-image: url(../assets/debbie.jpeg);
+  background-image: url(../assets/wilson.jpeg);
+  background-size: 140%;
 }
 
 .main .how {
