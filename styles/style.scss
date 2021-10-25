@@ -673,7 +673,9 @@ html {
     &__content {
       width: 50%;
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 16px;
     }
     &__logo {
@@ -686,6 +688,7 @@ html {
     }
     &__logo-1 {
       background-image: url(../assets/logo3.jpg);
+      margin-bottom: 16px;
     }
     &__logo-2 {
       background-image: url(../assets/logos360.png);
@@ -711,6 +714,7 @@ html {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+      margin-left: 16px;
     }
   }
 }
