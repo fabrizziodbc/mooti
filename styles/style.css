@@ -403,7 +403,7 @@ html ::-webkit-scrollbar-track {
 }
 
 .main .what .what__hr {
-  width: 15%;
+  width: 8%;
   height: 2px;
   background-color: var(--color__primary);
   border: none;
@@ -607,7 +607,7 @@ html ::-webkit-scrollbar-track {
 }
 
 .main .how .how__hr {
-  width: 76%;
+  width: 25%;
   height: 2px;
   background-color: var(--color__primary);
   border: none;
@@ -984,7 +984,7 @@ html ::-webkit-scrollbar-track {
 }
 
 .suport .respaldo__hr {
-  width: 15%;
+  width: 8%;
   height: 2px;
   background-color: var(--color__primary);
   border: none;
@@ -1087,7 +1087,7 @@ html ::-webkit-scrollbar-track {
 }
 
 .suport .potenciado .potenciado__hr {
-  width: 15%;
+  width: 8%;
   height: 2px;
   background-color: var(--color__primary);
   border: none;
