@@ -45,7 +45,7 @@
       <div class="header__content notMob">
         <ul class="menu-full">
           <li class="menu-full__item"><a href="#home">Inicio</a></li>
-          <li class="menu-full__item"><a href="#mooti">¿Qué es Mooti?</a></li>
+          <li class="menu-full__item"><a href="#mooti">¿Qué es MooTI?</a></li>
           <li class="menu-full__item"><a href="#beneficios">Beneficios</a></li>
           <li class="menu-full__item"><a href="#contacto">Contacto</a></li>
         </ul>
@@ -57,7 +57,7 @@
     <div class="menu-drop">
       <ul class="menu-drop__container">
         <li class="menu-drop__item"><a href="#home">Inicio</a></li>
-        <li class="menu-drop__item"><a href="#mooti">¿Qué es Mooti?</a></li>
+        <li class="menu-drop__item"><a href="#mooti">¿Qué es MooTI?</a></li>
         <li class="menu-drop__item"><a href="#beneficios">Beneficios</a></li>
         <li class="menu-drop__item"><a href="#contacto">Contacto</a></li>
       </ul>
@@ -148,7 +148,11 @@
       </div>
       <div class="dots_container" id="indicator"></div>
       <div class="what" id="mooti">
-        <p class="what__title">¿Qué es MooTi?</p>
+        <div class="what__title-container">
+          <hr class="what__hr" />
+          <p class="what__title">¿Qué es MooTI?</p>
+          <hr class="what__hr" />
+        </div>
         <iframe
           class="what__video"
           src="https://www.youtube.com/embed/vOqbw20qT0k?start=82"
@@ -159,9 +163,12 @@
         ></iframe>
       </div>
       <div class="how" id="beneficios">
-        <p class="how__title">
-          ¿De qué manera le ayudamos a usted y a su establo?
-        </p>
+        <div class="how__title-container">
+          <p class="how__title">
+            ¿De qué manera le ayudamos a usted y a su establo?
+          </p>
+          <hr class="how__hr" />
+        </div>
         <div class="how__cards">
           <div class="circle-container">
             <div class="outer-ring"></div>
@@ -275,14 +282,22 @@
       </div>
       <div class="suport">
         <div class="respaldo">
-          <p class="respaldo__title">Respaldados por</p>
+          <div class="respaldo__title-container">
+            <hr class="respaldo__hr" />
+            <p class="respaldo__title">Respaldados por</p>
+            <hr class="respaldo__hr" />
+          </div>
           <div class="respaldo__content">
             <span class="respaldo__logo respaldo__logo-1"></span>
             <span class="respaldo__logo respaldo__logo-2"></span>
           </div>
         </div>
         <div class="potenciado">
-          <p class="potenciado__title">Potenciado por</p>
+          <div class="potenciado__title-container">
+            <hr class="respaldo__hr" />
+            <p class="potenciado__title">Potenciado por</p>
+            <hr class="respaldo__hr" />
+          </div>
           <span class="potenciado__logo"></span>
         </div>
       </div>
@@ -295,7 +310,7 @@
             placeholder="RUC"
             name="ruc"
             id="ruc"
-            pattern="[0-9]{11}"
+            pattern="[1-2]{1}[0-9]{10}"
             required
             oninvalid="this.setCustomValidity('Por favor, ingresa un número de RUC válido')"
             oninput="this.setCustomValidity('')"
@@ -315,7 +330,7 @@
             name="celular"
             id="celular"
             required
-            pattern="[0-9]{9}"
+            pattern="[9]{1}[0-9]{8}"
             oninvalid="this.setCustomValidity('Por favor, ingresa un número de teléfono válido')"
             oninput="this.setCustomValidity('')"
           />

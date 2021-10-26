@@ -2,6 +2,10 @@
   padding: 0 60px;
 }
 
+.main .what .what__hr {
+  display: block;
+}
+
 .main .what__title {
   font-size: var(--font-size__big);
 }
@@ -11,7 +15,7 @@
 }
 
 .main .potenciado__title {
-  font-size: var(--font-size__big);
+  font-size: var(--font-size__title);
 }
 
 .main .contact__title {
@@ -32,7 +36,7 @@
 
 .main .how__title {
   margin-left: 36px;
-  width: 62%;
+  width: 80%;
   color: var(--color__text-2);
   margin-bottom: 16px;
   font-size: var(--font-size__big-b);
@@ -73,6 +77,10 @@
 .main .how .back {
   width: 200px;
   height: 200px;
+}
+
+.main .how .how__hr {
+  display: block;
 }
 
 .main .what__video {
@@ -142,6 +150,10 @@
   margin-top: 60px;
 }
 
+.main .respaldo__hr {
+  display: block;
+}
+
 .main .respaldo {
   width: 100%;
   display: -webkit-box;
@@ -163,8 +175,7 @@
 .main .respaldo__title {
   text-align: center;
   color: var(--color__text-2);
-  font-size: var(--font-size__big);
-  margin-bottom: 16px;
+  font-size: var(--font-size__title);
 }
 
 .main .respaldo__content {
