@@ -1221,20 +1221,32 @@ html ::-webkit-scrollbar-track {
 }
 
 .footer__content {
+  width: 260px;
+  height: 60px;
+  padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__content p {
   margin: 8px 0;
   color: var(--color__text-2);
   font-size: var(--font-size__tiny);
+}
+
+.footer__content .flag__peru {
+  width: 35px;
+  height: 20px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../assets/Flag_of_Peru.svg);
 }
 /*# sourceMappingURL=style.css.map */
