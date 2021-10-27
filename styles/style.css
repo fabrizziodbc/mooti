@@ -198,6 +198,32 @@ html ::-webkit-scrollbar-track {
           align-items: flex-end;
 }
 
+.menu-drop__container .menu-drop__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  text-align: end;
+  height: calc(60vh / 4);
+  padding: 0 16px;
+  border-top: solid 1px var(--color__primary);
+}
+
+.menu-drop__container .menu-drop__item:last-child {
+  border-bottom: solid 1px var(--color__primary);
+}
+
+.menu-drop__container .menu-drop__item:hover {
+  background-color: blanchedalmond;
+  color: var(--color__secundary);
+}
+
 .menu-drop__container a {
   color: var(--color__primary);
   width: 100vw;
