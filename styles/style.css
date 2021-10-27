@@ -193,17 +193,19 @@ html ::-webkit-scrollbar-track {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .menu-drop__container a {
-  color: var(--color__text-2);
-  text-align: center;
+  color: var(--color__primary);
   width: 100vw;
   text-decoration: none;
 }
 
 .menu-drop__container a:hover {
-  color: var(--color__primary);
+  color: var(--color__secundary);
 }
 
 .showRight {
