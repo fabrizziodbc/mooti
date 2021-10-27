@@ -213,6 +213,7 @@ html ::-webkit-scrollbar-track {
   height: calc(60vh / 4);
   padding: 0 16px;
   border-top: solid 1px var(--color__primary);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .menu-drop__container .menu-drop__item:last-child {
