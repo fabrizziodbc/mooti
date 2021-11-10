@@ -983,7 +983,7 @@ html ::-webkit-scrollbar-track {
 
 .suport {
   width: 100vw;
-  min-height: 60vh;
+  min-height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -997,86 +997,54 @@ html ::-webkit-scrollbar-track {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.suport .respaldo__title-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.suport .respaldo__hr {
-  width: 8%;
-  height: 2px;
-  background-color: var(--color__primary);
-  border: none;
-  display: none;
-}
-
-.suport .respaldo {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 16px 0;
-}
-
-.suport .respaldo__title {
-  margin: 0 16px;
-  text-align: center;
-  -ms-grid-column-align: center;
+  /*   .respaldo__title-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .respaldo__hr {
+    width: 8%;
+    height: 2px;
+    background-color: var(--color__primary);
+    border: none;
+    display: none;
+  } */
+  /* .respaldo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+    &__title {
+      margin: 0 16px;
+      text-align: center;
       justify-self: center;
-  color: var(--color__text-2);
-  font-size: var(--font-size__title);
-}
-
-.suport .respaldo__content {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 16px;
-}
-
-.suport .respaldo__logo {
-  display: inline-block;
-  width: 240px;
-  height: 120px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.suport .respaldo__logo-1 {
-  background-image: url(../assets/logo3.jpg);
-  margin-bottom: 16px;
+      color: var(--color__text-2);
+      font-size: var(--font-size__title);
+    }
+    &__content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    &__logo {
+      display: inline-block;
+      width: 240px;
+      height: 120px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__logo-1 {
+      background-image: url(../assets/logo3.jpg);
+      margin-bottom: 16px;
+    }
+  } */
 }
 
 .suport .potenciado {
@@ -1128,13 +1096,12 @@ html ::-webkit-scrollbar-track {
 
 .suport .potenciado__logo {
   display: inline-block;
-  width: 240px;
+  width: 200px;
   height: 120px;
-  background-image: url(../assets/logo1.png);
+  background-image: url(../assets/Logo-Yawi.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left: 16px;
 }
 
 .container {
