@@ -407,9 +407,9 @@ html ::-webkit-scrollbar-track {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   width: 100vw;
-  min-height: 80vh;
+  min-height: 70vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -454,7 +454,7 @@ html ::-webkit-scrollbar-track {
 }
 
 .main .what__description {
-  padding: 0 80px;
+  padding: 0 8px;
   text-align: justify;
   font-size: var(--font-size__subtitle);
   line-height: 1.5;
@@ -486,8 +486,8 @@ html ::-webkit-scrollbar-track {
 
 .main .what__img {
   position: relative;
-  width: 240px;
-  height: 240px;
+  width: 320px;
+  height: 320px;
   background-image: url("../assets//png_laptop.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -597,7 +597,7 @@ html ::-webkit-scrollbar-track {
   position: relative;
   background-color: var(--color__background);
   height: 310px;
-  width: 180px;
+  width: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
