@@ -17,11 +17,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.main .what .what__title-container {
-  padding-left: 44px;
-  padding-top: 44px;
+  grid-gap: 0;
+  /*   .what__title-container{
+      padding-left: 44px;
+      padding-top: 44px;
+    } */
 }
 
 .main .what .what__multimedia {
@@ -29,8 +29,8 @@
 }
 
 .main .what .what__img {
-  width: 360px;
-  height: 360px;
+  width: 480px;
+  height: 480px;
 }
 
 .main .what .what__hr {
@@ -38,7 +38,7 @@
 }
 
 .main .what__title {
-  font-size: var(--font-size__big);
+  font-size: var(--font-size__big-b);
 }
 
 .main .reviews__title {
@@ -57,6 +57,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -66,22 +70,25 @@
 }
 
 .main .how__title {
-  margin-left: 36px;
-  width: 80%;
+  width: 100%;
   color: var(--color__text-2);
   margin-bottom: 16px;
   font-size: var(--font-size__big-b);
-  text-align: left;
+  text-align: center;
 }
 
 .main .how__cards {
   width: 100%;
-  min-height: 100vh;
+  min-height: 40vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   place-items: center;
+}
+
+.main section .content .sub-heading {
+  font-size: var(--font-size__tiny);
 }
 
 .button-lap {
@@ -114,8 +121,40 @@
   display: block;
 }
 
-.main .what__video {
-  height: 470px;
+.main .reviews {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 70vh;
+}
+
+.main .reviews .cards__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 44px;
+  place-items: center;
+}
+
+.main .reviews .cards__container .reviews-card:nth-child(1) {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.main .reviews .cards__container .reviews-card:nth-child(2) {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.main .reviews .reviews-card {
+  height: 280px;
+  width: 280px;
 }
 
 .main .reviews .reviews-card__img {
