@@ -1056,7 +1056,7 @@ html ::-webkit-scrollbar-track {
 .dots_container {
   position: absolute;
   left: calc(50% - 36px);
-  bottom: 0;
+  bottom: -60px;
   z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
