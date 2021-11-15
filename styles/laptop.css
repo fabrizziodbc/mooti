@@ -2,6 +2,37 @@
   padding: 0 60px;
 }
 
+.main .what {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .what .what__title-container {
+  padding-left: 44px;
+  padding-top: 44px;
+}
+
+.main .what .what__multimedia {
+  padding: 0;
+}
+
+.main .what .what__img {
+  width: 360px;
+  height: 360px;
+}
+
 .main .what .what__hr {
   display: block;
 }
