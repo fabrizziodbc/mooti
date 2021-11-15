@@ -1,6 +1,7 @@
 const loader = document.querySelector(".loader-container");
 const header__hamburguer = document.querySelector(".header__nav-hamburguer");
 const menu_full = document.querySelector(".menu-drop");
+const header = document.querySelector(".header");
 const form = document.getElementById("myForm");
 
 const observer = new IntersectionObserver((entries) => {
@@ -40,9 +41,11 @@ const sendForm = (event) => {
 addEventListener("DOMContentLoaded", () => {
   header__hamburguer.addEventListener("click", () => {
     menu_full.classList.toggle("showRight");
+    header.classList.toggle("fixed");
   });
   menu_full.addEventListener("click", () => {
     menu_full.classList.toggle("showRight");
+    header.classList.toggle("fixed");
   });
   form.addEventListener("submit", sendForm);
 });

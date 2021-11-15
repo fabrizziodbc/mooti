@@ -2,6 +2,10 @@
   padding: 0 60px;
 }
 
+.main .container {
+  margin: 0 auto 20px;
+}
+
 .main .what {
   display: -ms-grid;
   display: grid;
