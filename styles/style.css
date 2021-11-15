@@ -399,13 +399,17 @@ html ::-webkit-scrollbar-track {
 }
 
 .main .what {
-  background-color: var(--color__background);
+  background-image: url(https://images.pexels.com/photos/5667015/pexels-photo-5667015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 20px;
   width: 100vw;
-  min-height: 40vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  min-height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-pack: baseline;
       -ms-flex-pack: baseline;
           justify-content: baseline;
@@ -416,10 +420,54 @@ html ::-webkit-scrollbar-track {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
+  /* .what__hr {
+      width: 8%;
+      height: 2px;
+      background-color: var(--color__primary);
+      border: none;
+      display: none;
+    } */
 }
 
 .main .what__title-container {
   width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 44px;
+  padding-top: 44px;
+}
+
+.main .what__description {
+  padding-top: 8px;
+  width: 70%;
+  font-size: var(--font-size__subtitle);
+}
+
+.main .what__title {
+  margin: 0 16px;
+  font-size: var(--font-size__title);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--color__background);
+}
+
+.main .what__multimedia {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,26 +479,14 @@ html ::-webkit-scrollbar-track {
           justify-content: center;
 }
 
-.main .what .what__hr {
-  width: 8%;
-  height: 2px;
-  background-color: var(--color__primary);
-  border: none;
-  display: none;
-}
-
-.main .what__title {
-  margin: 0 16px;
-  font-size: var(--font-size__title);
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 16px;
-  color: var(--color__text-2);
-}
-
-.main .what__video {
-  width: 100%;
-  height: 240px;
+.main .what__img {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  background-image: url(https://images.pexels.com/photos/5667015/pexels-photo-5667015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main .why {
@@ -1240,5 +1276,29 @@ html ::-webkit-scrollbar-track {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(../assets/Flag_of_Peru.svg);
+}
+
+.animation_bt {
+  position: relative;
+  -webkit-animation: example 0.8s ease-in forwards;
+          animation: example 0.8s ease-in forwards;
+}
+
+@-webkit-keyframes example {
+  0% {
+    bottom: -100vh;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes example {
+  0% {
+    bottom: -100vh;
+  }
+  100% {
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
